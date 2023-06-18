@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add a black background color to the top navigation */
+.nav-container {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+ 
+  }
+  
+.logo{
+  padding: 0px 100px;
+  cursor: pointer;
+
+  
+}
+.nav-container input[type=text] {
+  float: right;
+  padding: 6px;
+  padding-left: 15px;
+  border:1px solid rgba(255, 255, 255, 0.658);
+  margin-top: 8px;
+  margin-right: 4px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  margin-left: 35px;
+}
+
+.nav-container input[type=text]:focus-visible{
+  border:1px solid rgba(255, 255, 255, 0.753);
+
+}
+
+.topnav{
+  display: flex;
+  gap: 10px;
+}
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 43px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color:black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #049faa;
+    color: white;
+  }
+
+  .search-icon{
+    position: absolute;
+    color: #f2f2f2;
+    top:10px;
+    right: 677px;
+  }
+  /* .contact-container{
+    text-align: center;
+  } */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    padding-top: 30px;
+    
+    padding: 0 16px;
+    
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+.about-container{
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.button{
+  cursor: pointer;
+  background-color: rgba(243, 243, 242, 0.548);
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.movie-title{
+  color: orange;
+}
+.profile-content{
+  display: flex;
+  justify-content: center;
+}
+.card img{
+  width: 400px;
+}
+footer{
+  background-color: #474e5d;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-right: 30px;
+  color: white;
+}
+.footer-container{
+  display: flex;
+}
+.end{
+  color: white;
+  font-size: 15px;
+}
+.footer-nav{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav a{
+  color:white;
+  text-decoration: none;
+}
+.footer-nav a:hover{
+  cursor: pointer;
+  color:orange;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+  left: -133px;
+}
+
+.next{
+  right:-133px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.details {
+  background-image: url('../image/space.jpg');
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  max-width: 1270px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+  

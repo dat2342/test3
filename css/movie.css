@@ -1,0 +1,29 @@
+.movie-trailer {
+  color: white;
+  padding: 40px 50px;
+  border-bottom: 1px solid rgb(78, 181, 27);
+}
+.trailer {
+  display: flex;
+  justify-content: space-between;
+}
+.movie-title {
+  color: white;
+}
+.movie-details{
+  color:orange;  
+  font-size: 20px;
+  width: 30%;
+  
+}
+.Cast{
+    color: rgb(231, 231, 45);
+}
+.detail{
+    color: white;
+    
+}
+
+.movie-container{
+  background-image: url("../image/space.jpg");
+}
